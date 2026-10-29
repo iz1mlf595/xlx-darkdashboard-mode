@@ -25,7 +25,7 @@ sudo find /var/www/html/ysf-dashboard-modern -type f -exec chmod 644 {} \;
 <br>
 <br>
 <br>
-<h1 class="text-3xl md:text-4xl font-bold">Anteprima grafica della dashboard:
+<h1 class="text-2xl md:text-2xl font-bold">Anteprima grafica della dashboard:
 <br>
 <br>
 <br>
