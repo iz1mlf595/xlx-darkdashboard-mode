@@ -1,14 +1,30 @@
 # 📻 Dashboard DarkMode per XLX Reflector
 <br>
 <br>
-Una volta copiata la dashboard in /var/www/html 
 <br>
-dare i permessi di lettura/scrittura per Apache
+Passaggi per installazione della Dashboard :
+<br>
+# 1. Clona la repository dalla directory /var/www/html (o dalla cartella desiderata)
+cd /var/www/html
+<br>
+sudo git clone https://github.com/iz1mlf595/xlx-darkdashboard-mode.git
+<br>
+# 2. Entra nella cartella appena creata
+<br>
+cd /var/www/html
+<br>
+# 4. Assegna i permessi corretti ad Apache
+<br>
+sudo chown -R www-data:www-data /var/www/html/ysf-dashboard-modern
+<br>
+sudo find /var/www/html/ysf-dashboard-modern -type d -exec chmod 755 {} \;
+<br>
+sudo find /var/www/html/ysf-dashboard-modern -type f -exec chmod 644 {} \; 
 <br>
 <br>
-sudo chown -R www-data:www-data /var/www/html/
 <br>
-sudo find /var/www/html/ -type d -exec chmod 755 {} \;
+<br>
+<br>
 <br>
 <br>
 <br>
