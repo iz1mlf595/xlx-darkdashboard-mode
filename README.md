@@ -6,6 +6,7 @@ Passaggi per installazione della Dashboard :
 <br>
 Prima di effettuare la clonazione , ricordati di effettuare una copia di backup del file presente in /pgs/config.inc.php , una volta clonata la nuova dashboard ricopialo dentro la cartella /pgs
 <br>
+<br>
 1. Clona la repository dalla directory /var/www/html (o dalla cartella desiderata)
 <br>
 cd /var/www/html
@@ -27,7 +28,7 @@ sudo find /var/www/html/ysf-dashboard-modern -type f -exec chmod 644 {} \;
 <br>
 <br>
 <br>
-<h1 class="text-2xl md:text-2xl font-bold">Anteprima grafica della dashboard:
+<h1 class="text-1xl md:text-1xl font-bold">Anteprima grafica della dashboard:
 <br>
 <br>
 <br>
