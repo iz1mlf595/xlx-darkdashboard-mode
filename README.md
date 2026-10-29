@@ -4,6 +4,8 @@
 <br>
 Passaggi per installazione della Dashboard :
 <br>
+Prima di effettuare la clonazione , ricordati di effettuare una copia di backup del file presente in /pgs/config.inc.php , una volta clonata la nuova dashboard ricopialo dentro la cartella /pgs
+<br>
 1. Clona la repository dalla directory /var/www/html (o dalla cartella desiderata)
 <br>
 cd /var/www/html
