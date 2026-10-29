@@ -4,17 +4,17 @@
 <br>
 Passaggi per installazione della Dashboard :
 <br>
-# 1. Clona la repository dalla directory /var/www/html (o dalla cartella desiderata)
+1. Clona la repository dalla directory /var/www/html (o dalla cartella desiderata)
 <br>
 cd /var/www/html
 <br>
 sudo git clone https://github.com/iz1mlf595/xlx-darkdashboard-mode.git
 <br>
-# 2. Entra nella cartella appena creata
+2. Entra nella cartella appena creata
 <br>
 cd /var/www/html
 <br>
-# 4. Assegna i permessi corretti ad Apache
+3. Assegna i permessi corretti ad Apache
 <br>
 sudo chown -R www-data:www-data /var/www/html/
 <br>
@@ -30,7 +30,7 @@ sudo find /var/www/html/ysf-dashboard-modern -type f -exec chmod 644 {} \;
 <br>
 <br>
 <br>
-Anteprima grafica della dashboard:
+# Anteprima grafica della dashboard:
 <br>
 
 <img width="1821" height="883" alt="Anteprima SvxLink" src="https://github.com/user-attachments/assets/bf424c55-a4f4-4c52-bbae-be65e856820b" />
