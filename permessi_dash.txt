@@ -1,0 +1,15 @@
+Permessi per accesso totale ad Apache
+
+sudo chown -R www-data:www-data /var/www/html
+
+sudo find /var/www/html -type d -exec chmod 755 {} \;
+sudo find /var/www/html -type f -exec chmod 644 {} \;
+
+Non appena spostata la Dashboard dare i permessi ad Apache per i file callinghome.php e lastcallhome.php , poi far puntare la dashbaord al file config.inc.php 
+alla cartella /xlxd e abilitare CallHone su true e salvare dopo pochi minuti si dovrebbero generare i due file all'interno della cartella.
+
+sudo chown www-data:www-data /xlxd/callinghome.php
+sudo chown www-data:www-data /xlxd/lastcallhome.php
+
+sudo chmod 664 /xlxd/callinghome.php
+sudo chmod 666 /xlxd/lastcallhome.php
