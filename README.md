@@ -5,6 +5,7 @@
 Passaggi per installazione della Dashboard :
 <br>
 # 1. Clona la repository dalla directory /var/www/html (o dalla cartella desiderata)
+<br>
 cd /var/www/html
 <br>
 sudo git clone https://github.com/iz1mlf595/xlx-darkdashboard-mode.git
