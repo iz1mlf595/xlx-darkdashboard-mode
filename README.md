@@ -30,7 +30,7 @@ sudo find /var/www/html/ysf-dashboard-modern -type f -exec chmod 644 {} \;
 <br>
 <br>
 <br>
-#Anteprima grafica della dashboard:
+# Anteprima grafica della dashboard:
 <br>
 <img width="1821" height="883" alt="Anteprima SvxLink" src="https://github.com/user-attachments/assets/bf424c55-a4f4-4c52-bbae-be65e856820b" />
 <br>
