@@ -7,6 +7,7 @@ dare i permessi di lettura/scrittura per Apache
 <br>
 <br>
 sudo chown -R www-data:www-data /var/www/html/
+<br>
 sudo find /var/www/html/ -type d -exec chmod 755 {} \;
 
 Anteprima grafica della dashboard:
