@@ -16,7 +16,7 @@ cd /var/www/html
 <br>
 # 4. Assegna i permessi corretti ad Apache
 <br>
-sudo chown -R www-data:www-data /var/www/html/ysf-dashboard-modern
+sudo chown -R www-data:www-data /var/www/html/
 <br>
 sudo find /var/www/html/ysf-dashboard-modern -type d -exec chmod 755 {} \;
 <br>
