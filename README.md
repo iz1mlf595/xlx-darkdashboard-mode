@@ -1,4 +1,13 @@
 # 📻 Dashboard DarkMode per XLX Reflector
+<br>
+<br>
+Una volta copiata la dashboard in /var/www/html 
+<br>
+dare i permessi di lettura/scrittura per Apache
+<br>
+<br>
+sudo chown -R www-data:www-data /var/www/html/
+sudo find /var/www/html/ -type d -exec chmod 755 {} \;
 
 Anteprima grafica della dashboard:
 <br>
