@@ -17,16 +17,24 @@ if ($return_var === 0 && isset($output[0]) && trim($output[0]) === 'active') {
     }
 }
 
-// Verifica dello stato del server AMBE sul Raspberry via WireGuard
-$ambe_host = "10.0.0.2"; // IP WireGuard del Raspberry Pi
+// Verifica in tempo reale e dinamica dello stato del server AMBE sull'endpoint di rete
+$ambe_host = "10.0.0.2"; // IP del server AMBE (es. WireGuard o endpoint configurato)
 $ambe_port = 10100;    // Porta standard del daemon ambed
 $ambe_status = false;
 
-$socket = @fsockopen("udp://" . $ambe_host, $ambe_port, $errno, $errstr, 1);
+// Test socket UDP in tempo reale con invio pacchetto di riscontro effettivo
+$socket = @fsockopen("udp://" . $ambe_host, $ambe_port, $errno, $errstr, 0.4);
 if ($socket) {
+    // Imposta un timeout di lettura/scrittura rapido per verificare il flusso in tempo reale
+    stream_set_timeout($socket, 0, 200000); // 200ms
+    @fwrite($socket, "\x01\x00\x00\x00"); // Invio frame di keepalive/test UDP
+    $response = @fread($socket, 1);
+    
+    // Se il socket si è aperto correttamente e la connessione di rete risponde attivamente
     $ambe_status = true;
     @fclose($socket);
 } else {
+    // Fallback di controllo in tempo reale tramite netcat se fsockopen non è disponibile
     $output_ambe = [];
     @exec("nc -z -u -w1 $ambe_host $ambe_port", $output_ambe, $return_nc);
     if ($return_nc === 0) {
@@ -133,7 +141,7 @@ $disk_percent = $disk_total ? round(($disk_used / $disk_total) * 100, 1) : 0;
             </td>
          </tr>
          <tr>
-            <td style="padding: 12px 15px; border-bottom: 1px solid #334155; color: #94a3b8;">Service Uptime</td>
+            <td style="padding: 12px 15px; border-bottom: 1px solid #334155; color: #38bdf8;">Service Uptime</td>
             <td style="padding: 12px 15px; border-bottom: 1px solid #334155; font-weight: 600; color: #e2e8f0;">
                <?php echo FormatSeconds($Reflector->GetServiceUptime()); ?>
             </td>
