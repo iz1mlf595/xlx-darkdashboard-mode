@@ -39,4 +39,4 @@ sudo find /var/www/html/ysf-dashboard-modern -type f -exec chmod 644 {} \;
 Anteprima grafica della gestione dei Moduli che vengono visualizzati solo i moduli realmente attivi e vengono mostrati in automatico se aggiunti dalla pagina config.inc.php , i moduli con nodi connessi vengono evidenziati con il banner verde.
 <br>
 <br>
-<img width="1915" height="887" alt="Image" src="https://github.com/user-attachments/assets/8352d2ca-137b-4f2f-94a3-43aac904a256" />
+<img width="1900" height="943" alt="Image" src="https://github.com/user-attachments/assets/1bf7fb68-f8ed-46f7-95f4-4ea81459815d" />
