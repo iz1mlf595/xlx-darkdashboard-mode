@@ -28,7 +28,7 @@ sudo find /var/www/html/ysf-dashboard-modern -type f -exec chmod 644 {} \;
 <br>
 <br>
 <br>
-Per modificare l'intestazione della dashboard , utilizzare il file all'interno della cartella PGS/config.dahbaord.php
+Per modificare l'intestazione della dashboard , utilizzare il file all'interno della cartella PGS/config.dashboard.php
 <br>
 <br>
 <br>
