@@ -33,7 +33,7 @@ sudo find /var/www/html/ysf-dashboard-modern -type f -exec chmod 644 {} \;
 <br>
 <br>
 <br>
-<img width="1821" height="883" alt="Anteprima SvxLink" src="https://github.com/user-attachments/assets/bf424c55-a4f4-4c52-bbae-be65e856820b" />
+<img width="1901" height="941" alt="Image" src="https://github.com/user-attachments/assets/9e66666d-b445-44e1-a92c-70c493fca947" />
 <br>
 <br>
 Anteprima grafica della gestione dei Moduli che vengono visualizzati solo i moduli realmente attivi e vengono mostrati in automatico se aggiunti dalla pagina config.inc.php , i moduli con nodi connessi vengono evidenziati con il banner verde.
