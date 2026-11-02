@@ -28,6 +28,10 @@ sudo find /var/www/html/ysf-dashboard-modern -type f -exec chmod 644 {} \;
 <br>
 <br>
 <br>
+Per modificare l'intestazione della dashboard , utilizzare il file all'interno della cartella PGS/config.dahbaord.php
+<br>
+<br>
+<br>
 <h1 class="text-1xl md:text-1xl font-bold">Anteprima grafica della dashboard:
 <br>
 <br>
